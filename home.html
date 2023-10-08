@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link href="../home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    img1 {
+      height: 40px;
+      width: 40px;
+      margin: auto;
+      padding: 40px;
+      margin-top: 0%;
+    }
+
+    .img {
+      transition: transform 0.3s;
+    }
+
+    .img img:hover {
+      transform: scale(1.1);
+    }
+
+    /* .image-container img {
+            width: 300px; 
+            height: auto; 
+            transition: transform 0.3s; 
+        }
+
+        
+        .image-container img:hover {
+            transform: scale(1.1); 
+        } */
+
+    .info {
+      height: 50px;
+      width: 100%;
+      background-color: aqua;
+      float: left;
+
+    }
+
+    .card-container {
+      margin-top: 20px;
+    }
+
+    .card {
+      transition: transform 0.2s;
+      /* Add a smooth transition for the hover effect */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      /* Increase the size of the card on hover */
+    }
+
+    .free {
+      height: 50px;
+      width: 100%;
+    }
+
+    .free:hover {
+      transform: scale(1.05);
+      /* Increase the size of the card on hover */
+    }
+    .rating {
+  font-size: 30px;
+}
+
+.star {
+  color: gold;
+  margin: 5px;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" style="position: relative;">
+      <div class="img1">
+        <img src="./images/logo1.jpg">
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOKLIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="img">
+    <img src="./images/SomoorishSlider (1).jpg" class="hover:scale-110 transition lg:h-auto ease-in duration-300 w-full"
+      width="100%" height="100%" alt="A beautiful image">
+
+  </div>
+
+
+  <div class="info">
+
+  </div>
+  <div class="card1">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Cocoa Dusted Almond - Dark Chocolate.</p>
+              </h3>
+              <h6>No ratings yet</h6>
+              <button onclick="addToCart('Cocoa Dusted Almond - Dark Chocolate.', 200)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card2.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Pretzels and Peanuts - Milk Chocolate</p>
+              </h3>
+              <br>
+              <h6>No ratings yet</h6><br>
+              <button onclick="addToCart('Pretzels and Peanuts - Milk Chocolate', 250)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Macadamia - Milk Chocolate.</p>
+              </h3>
+              <br>
+              <h6>No ratings yet</h6><br>
+              <button onclick="addToCart('Macadamia - Milk Chocolate.', 160)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card5.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Macadamia - Dark Chocolate.</p>
+              </h3>
+              <br>
+              <h6>No ratings yet</h6>
+              <button onclick="addToCart('Macadamia -  Dark Chocolate', 180)">Add to Cart</button>
+              <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- new cardd -->
+  <div class="card2" style="margin: 10px;">
+
+    <div class="container-fluid">
+      <h1 style="height: 60px;text-align: center;">New Arrival</h1>
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card21.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Cranberry Almond and Coconut - Dark Chocolate</p>
+              </h3>
+              <!-- <h6>No ratings yet</h6> -->
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+               
+                <span class="star">&#9733;</span>
+              </div>
+              <button onclick="addToCart('Cranberry Almond and Coconut - Dark Chocolate', 200)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card22.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Pretzels and Peanuts - Milk Chocolate</p>
+              </h3>
+              <br>
+              <!-- <h6>No ratings yet</h6> -->
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              
+              </div>
+              <button onclick="addToCart('Pretzels and Peanuts - Milk Chocolate', 250)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card23.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Macadamia - Milk Chocolate.</p>
+              </h3>
+              <br>
+              <!-- <h6>No ratings yet</h6> -->
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+               
+              </div>
+              <button onclick="addToCart('Macadamia - Milk Chocolate', 250)">Add to Cart</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./images/card24.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>
+                <p class="card-text">Macadamia - Dark Chocolate.</p>
+              </h3>
+              <br>
+              <!-- <h6>No ratings yet</h6> -->
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <button onclick="addToCart('Macadamia - Dark Chocolate', 250)">Add to Cart</button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="free">
+    <img src="./images/free_shipping.jpg" width="100%" height="300px">
+
+  </div>
+
+  <div class="write">
+    <h1>FREE SHIPPING</h1>
+    <h3></h3>
+  </div> -->
+  <section id="cart">
+    
+    <ul id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </ul>
+    <button onclick="checkoutWithPayPal()" class="btn btn-primary form-control ">Buy NOW</button>
+</section> 
+
+
+  <script>
+    
+          let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = "";
+
+    let totalPrice = 0;
+
+    cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - Rs.${item.price}`;
+        cartItems.appendChild(li);
+        totalPrice += item.price;
+    });
+
+    const checkoutButton = document.querySelector("#cart button");
+    checkoutButton.textContent = `BUY NOW 🛒 (Rs.${totalPrice})`;
+}
+    function checkoutWithPayPal() {
+            // In a real implementation, you would redirect the user to PayPal here.
+            // For simplicity, we'll just display a message.
+            alert("Redirecting to PayPal for payment...");
+        }
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
